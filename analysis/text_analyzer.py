@@ -1,7 +1,12 @@
+import torch  # <-- ESSENCIAL
 from transformers import pipeline
 
-# Inicializa o pipeline
-classifier = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
+# Pipeline de análise de sentimentos
+classifier = pipeline(
+    "sentiment-analysis",
+    model="distilbert-base-uncased-finetuned-sst-2-english",
+    device=-1  # força CPU, importante para ambientes como Streamlit Cloud
+)
 
 def analyze_text(text):
     if not text.strip():
