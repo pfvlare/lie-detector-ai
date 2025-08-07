@@ -1,0 +1,71 @@
+/* --- Global Styles --- */
+html,
+body,
+[class*="css"] {
+    background-color: #0f0f0f;
+    color: #eaeaea;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* --- Inputs / Text Areas --- */
+textarea,
+input,
+.stTextArea textarea {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus,
+input:focus {
+    border: 1px solid #5c5cfc;
+    outline: none;
+}
+
+/* --- Buttons --- */
+.stButton>button {
+    background: linear-gradient(to right, #6c63ff, #5c5cfc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(to right, #7a75ff, #6c63ff);
+    transform: scale(1.02);
+}
+
+/* --- Sidebar --- */
+[data-testid="stSidebar"] {
+    background-color: #1b1b1b;
+}
+
+[data-testid="stSidebar"] h1,
+h2,
+h3 {
+    color: #eaeaea;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .stColumn {
+        flex-direction: column !important;
+    }
+}

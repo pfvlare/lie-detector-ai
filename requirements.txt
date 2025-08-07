@@ -1,0 +1,7 @@
+pyAudioAnalysis
+numpy
+scipy
+matplotlib
+librosa
+soundfile
+transformers
